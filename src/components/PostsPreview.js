@@ -13,7 +13,7 @@ const PostsPreview = ({ posts }) => {
             Author: {post.fields.author} - created on {post.sys.createdAt}
           </p>
           <Link to={`../${post.sys.id}`}>
-            <button>Read full article</button>
+            <button id="btn-card"> Read full article</button>
           </Link>
         </div>
       ))}
