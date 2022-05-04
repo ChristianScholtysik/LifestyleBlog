@@ -12,7 +12,7 @@ function NavBar() {
           Blog
         </NavLink>
 
-        <NavLink className="nav" to="">
+        <NavLink className="nav" to="./about">
           About
         </NavLink>
         <NavLink className="nav" to="./PostsPreview">
