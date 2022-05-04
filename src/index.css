@@ -24,3 +24,25 @@ code {
   color: grey;
   font-size: 18px;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  font-size: larger;
+}
+
+.navbar {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
