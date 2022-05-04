@@ -6,7 +6,7 @@ const Header = ({ post }) => {
   //  const newestPost = posts.push(
   //    (post) => student.login.uuid === id
   //  );
-  console.log(post);
+  // console.log(post);
   return (
     <div className="header">
       <img
