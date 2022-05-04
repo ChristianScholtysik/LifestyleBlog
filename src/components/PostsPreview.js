@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import Header from "../components/Header";
 const PostsPreview = ({ posts }) => {
   return (
     <div>
+      {posts && <Header post={posts[posts.length - 1]} />}
       {posts.map((post) => (
         <div className="cardbody" key={post.sys.id}>
           <img src={post.fields.image.fields?.file.url} alt="" width="100%" />
@@ -22,6 +23,7 @@ const PostsPreview = ({ posts }) => {
 
 export default PostsPreview;
 
+// how to create a card body - example
 /* <div class="card">
   <img src="img.jpg" alt="John" style="width:100%">
   <h1>John Doe</h1>
