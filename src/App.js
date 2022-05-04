@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { client } from "./client";
 import NavBar from "./components/NavBar";
 import RouterConfig from "./components/RouterConfig";
-
+import Header from "./components/Header";
 const App = () => {
   const [posts, setPosts] = useState();
   const [error, setError] = useState();
@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     client
-      .getEntries()
+      .getEntries({ order: "sys.createdAt" })
       .then((response) => {
         console.log(response.items);
         setPosts(response.items);
@@ -22,7 +22,7 @@ const App = () => {
     <div className="App">
       <NavBar />
       <header>
-        <h1>Welcome to CD LIFESTYLE</h1>
+        <h1>YOUR BLOG FOR MUSIC AND EVENTS</h1>
       </header>
       <main>
         {!posts && "Loading...."}
