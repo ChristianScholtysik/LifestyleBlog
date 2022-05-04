@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Header = ({ post }) => {
   //  const newestPost = posts.push(posts.length - 1);
   //  const newestPost = posts.push(
@@ -21,5 +22,3 @@ const Header = ({ post }) => {
     </div>
   );
 };
-
-export default Header;
