@@ -131,3 +131,14 @@ code {
   margin-bottom: 10px;
   padding: 5px 5px;
 }
+
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.about-txt,
+.about-heading {
+  display: flex;
+  justify-content: center;
+}
