@@ -4,8 +4,8 @@ import { Map, Marker } from "pigeon-maps";
 const About = (posts) => {
   // const location = posts.fields.location;
   return (
-    <div>
-      <div>
+    <div className="about">
+      <div className="about-div">
         <h2 className="about-heading">About us</h2>
         <p className="about-txt">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -19,8 +19,8 @@ const About = (posts) => {
       </div>
       <div className="map">
         <Map
-          height={300}
-          width={600}
+          height={600}
+          width={1200}
           defaultCenter={[52.457119, 13.54023]}
           defaultZoom={15}
         >
