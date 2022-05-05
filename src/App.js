@@ -1,11 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { useState, useEffect } from "react";
 import { client } from "./client";
-import NavBar from "./components/NavBar";
-import Navbar from "react-bootstrap/Navbar";
 import RouterConfig from "./components/RouterConfig";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Header from "./components/Header";
 
 const App = () => {
   const [posts, setPosts] = useState();
