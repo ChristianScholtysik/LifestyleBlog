@@ -1,12 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-// import { Map, Marker } from "pigeon-maps";
+import { Map, Marker } from "pigeon-maps";
 
 const PostDetails = ({ posts }) => {
   const { id } = useParams();
   const selectedPost = posts.find((post) => post.sys.id === id);
   console.log(selectedPost);
-  // const location = selectedPost.location;
   // console.log(location);
   return (
     <div>
@@ -20,14 +19,23 @@ const PostDetails = ({ posts }) => {
             height="400"
           />
           <p>{selectedPost.fields.description}</p>
-          {/* <Map
+          <Map
             height={200}
             width={280}
-            defaultCenter={[location.lat, location.lon]}
+            defaultCenter={[
+              selectedPost.fields.location.lat,
+              selectedPost.fields.location.lon,
+            ]}
             defaultZoom={8}
           >
-            <Marker width={30} anchor={[location.lat, location.lon]} />
-          </Map> */}
+            <Marker
+              width={30}
+              anchor={[
+                selectedPost.fields.location.lat,
+                selectedPost.fields.location.lon,
+              ]}
+            />
+          </Map>
         </div>
       )}
     </div>
