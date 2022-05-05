@@ -21,7 +21,7 @@ const PostDetails = ({ posts }) => {
           <p>{selectedPost.fields.description}</p>
           <Map
             height={200}
-            width={280}
+            width={400}
             defaultCenter={[
               selectedPost.fields.location.lat,
               selectedPost.fields.location.lon,
