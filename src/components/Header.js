@@ -8,13 +8,16 @@ const Header = ({ post }) => {
   //  );
   // console.log(post);
   return (
-    <div className="header">
-      <img
-        src={post.fields.image.fields.file.url}
-        alt=""
-        width="300"
-        height="400"
-      />
+    <div className="headerContent">
+      <hr className="solid" />
+      <div id="img-div">
+        <img
+          src={post.fields.image.fields.file.url}
+          alt=""
+          width="300"
+          height="400"
+        />
+      </div>
       <Link to={`../${post.sys.id}`}>
         <h2>{post.fields.shortDescription}</h2>
       </Link>

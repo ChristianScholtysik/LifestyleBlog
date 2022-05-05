@@ -81,12 +81,19 @@ code {
   font-family: "DM Serif Display", serif;
 }
 
-.header {
+div.headerContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
+#img-div {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+.h2 {
+  text-align: center;
+}
 .cardbody {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -122,6 +129,7 @@ hr.solid {
   border-top: 3px solid #bbb;
   margin: 10px;
 }
+
 .header {
   display: flex;
   justify-content: center;
@@ -132,3 +140,4 @@ hr.solid {
   width: 100%;
   height: 100%;
 }
+
