@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 
 export default function Header({ post }) {
   //  const newestPost = posts.push(posts.length - 1);
