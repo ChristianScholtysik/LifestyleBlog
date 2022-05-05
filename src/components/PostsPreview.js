@@ -11,7 +11,8 @@ const PostsPreview = ({ posts }) => {
           <img src={post.fields.image.fields?.file.url} alt="" width="100%" />
           <p>{post.fields.shortDescription}</p>
           <p className="author">
-            Author: {post.fields.author} - created on {post.sys.createdAt}
+            {/* Author: {post.fields.author} - created on {post.sys.createdAt} */}
+            Author: {post.fields.author}
           </p>
           <Link to={`../${post.sys.id}`}>
             <button id="btn-card"> Read full article</button>
