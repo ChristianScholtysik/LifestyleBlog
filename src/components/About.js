@@ -5,7 +5,7 @@ const About = (posts) => {
   // const location = posts.fields.location;
   return (
     <div>
-      <p>
+      <div>
         <h2 className="about-heading">About us</h2>
         <p className="about-txt">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -16,11 +16,11 @@ const About = (posts) => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </p>
+      </div>
       <div className="map">
         <Map
-          height={500}
-          width={1200}
+          height={300}
+          width={600}
           defaultCenter={[52.457119, 13.54023]}
           defaultZoom={15}
         >

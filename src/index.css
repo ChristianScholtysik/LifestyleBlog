@@ -142,3 +142,11 @@ code {
   display: flex;
   justify-content: center;
 }
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin: 10px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}

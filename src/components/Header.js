@@ -18,7 +18,7 @@ const Header = ({ post }) => {
       <Link to={`../${post.sys.id}`}>
         <h2>{post.fields.shortDescription}</h2>
       </Link>
-      <hr class="solid"></hr>
+      <hr className="solid" />
     </div>
   );
 };
