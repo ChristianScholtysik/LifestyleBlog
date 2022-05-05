@@ -10,12 +10,14 @@ const Header = ({ post }) => {
   return (
     <div className="headerContent">
       <hr className="solid" />
-      <img
-        src={post.fields.image.fields.file.url}
-        alt=""
-        width="300"
-        height="400"
-      />
+      <div id="img-div">
+        <img
+          src={post.fields.image.fields.file.url}
+          alt=""
+          width="300"
+          height="400"
+        />
+      </div>
       <Link to={`../${post.sys.id}`}>
         <h2>{post.fields.shortDescription}</h2>
       </Link>
