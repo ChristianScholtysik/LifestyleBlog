@@ -8,7 +8,8 @@ const Header = ({ post }) => {
   //  );
   // console.log(post);
   return (
-    <div className="header">
+    <div className="headerContent">
+      <hr className="solid" />
       <img
         src={post.fields.image.fields.file.url}
         alt=""
