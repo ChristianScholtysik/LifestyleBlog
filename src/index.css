@@ -131,8 +131,15 @@ hr.solid {
 }
 
 .header {
-  display: flex;
+  background-image: url(components/img/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg);
+  color: white;
+  /* display: flex;
   justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto; */
 }
 
 .about {
@@ -140,4 +147,3 @@ hr.solid {
   width: 100%;
   height: 100%;
 }
-
