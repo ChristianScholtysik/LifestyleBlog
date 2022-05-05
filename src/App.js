@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { client } from "./client";
 import RouterConfig from "./components/RouterConfig";
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const [posts, setPosts] = useState();
